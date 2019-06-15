@@ -11,6 +11,7 @@
     "@oclif/command": "^1.5.14",
     "@oclif/config": "^1.13.0",
     "@oclif/plugin-help": "^2.2.0",
+    "puppeteer-core": "^1.17.0",
     "tslib": "^1.10.0"
   },
   "devDependencies": {
@@ -20,10 +21,13 @@
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.7",
     "@types/node": "^10.14.9",
+    "@types/puppeteer": "1.12.4",
+    "@types/puppeteer-core": "1.9.0",
     "chai": "^4.2.0",
     "globby": "^8.0.2",
     "mocha": "^5.2.0",
     "nyc": "^13.3.0",
+    "puppeteer": "1.17.0",
     "ts-node": "^8.3.0",
     "tslint": "^5.17.0",
     "typescript": "^3.5.2"
@@ -34,7 +38,6 @@
   "files": [
     "/bin",
     "/lib",
-    "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
   "homepage": "https://github.com/sugarshin/sdu",
