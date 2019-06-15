@@ -1,5 +1,4 @@
-sdu
-===
+# sdu
 
 A CLI that Speaker Deck
 
@@ -29,28 +28,93 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`sdu hello [FILE]`](#sdu-hello-file)
+* [`sdu ls`](#sdu-ls)
+* [`sdu new [FILE]`](#sdu-new-file)
+* [`sdu update [PATH_NAME]`](#sdu-update-pathname)
+* [`sdu delete [PATH_NAME]`](#sdu-delete-pathname)
 * [`sdu help [COMMAND]`](#sdu-help-command)
 
-## `sdu hello [FILE]`
+## `sdu ls`
 
-describe the command here
+List Slides
 
 ```
 USAGE
-  $ sdu hello [FILE]
+  $ sdu ls
 
 OPTIONS
-  -f, --force
   -h, --help       show CLI help
-  -n, --name=name  name to print
+  -a, --all        list all slides
+  -j, --json       print by json format
 
 EXAMPLE
-  $ sdu hello
-  hello world from ./src/hello.ts!
+  $ sdu ls
+  * Foo Title
+    * https://speakerdeck.com/sugarshin/foo
+    * foo
+  * Example
+    * https://speakerdeck.com/sugarshin/bar
+    * bar
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/sugarshin/sdu/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/ls.ts](https://github.com/sugarshin/sdu/blob/v0.0.0/src/commands/ls.ts)_
+
+## `sdu new [FILE]`
+
+upload a new slide
+
+```
+USAGE
+  $ sdu new [FILE]
+
+OPTIONS
+  -t, --title      title
+  -p, --pathname   pathname
+  -f, --force
+  -h, --help       show CLI help
+
+EXAMPLE
+  $ sdu new /slides/path/example.pdf -t "Example Title"
+  https://speakerdeck.com/sugarshin/example-title
+```
+
+_See code: [src/commands/new.ts](https://github.com/sugarshin/sdu/blob/v0.0.0/src/commands/new.ts)_
+
+## `sdu update [PATH_NAME]`
+
+update a slide
+
+```
+USAGE
+  $ sdu update [PATH_NAME]
+
+OPTIONS
+  -h, --help       show CLI help
+
+EXAMPLE
+  $ sdu update example-title
+  https://speakerdeck.com/sugarshin/example-title
+```
+
+_See code: [src/commands/update.ts](https://github.com/sugarshin/sdu/blob/v0.0.0/src/commands/update.ts)_
+
+## `sdu delete [PATH_NAME]`
+
+delete a slide
+
+```
+USAGE
+  $ sdu delete [PATH_NAME]
+
+OPTIONS
+  -y, --assume-yes   assume yes
+  -h, --help         show CLI help
+
+EXAMPLE
+  $ sdu delete example-title
+```
+
+_See code: [src/commands/delete.ts](https://github.com/sugarshin/sdu/blob/v0.0.0/src/commands/delete.ts)_
 
 ## `sdu help [COMMAND]`
 
