@@ -40,15 +40,15 @@ List Slides
 
 ```
 USAGE
-  $ sdu ls
 
+  $ sdu ls [USERNAME]
 OPTIONS
   -h, --help       show CLI help
-  -a, --all        list all slides
+  -a, --all        list all slides # not implemented yet
   -j, --json       print by json format
 
 EXAMPLE
-  $ sdu ls
+  $ sdu ls sugarshin
   * Foo Title
     * https://speakerdeck.com/sugarshin/foo
     * foo
@@ -59,7 +59,7 @@ EXAMPLE
 
 _See code: [src/commands/ls.ts](https://github.com/sugarshin/sdu/blob/v0.0.0/src/commands/ls.ts)_
 
-## `sdu new [FILE]`
+## `sdu new [FILE]` *not implemented yet*
 
 upload a new slide
 
@@ -69,7 +69,6 @@ USAGE
 
 OPTIONS
   -t, --title      title
-  -p, --pathname   pathname
   -f, --force
   -h, --help       show CLI help
 
@@ -80,7 +79,7 @@ EXAMPLE
 
 _See code: [src/commands/new.ts](https://github.com/sugarshin/sdu/blob/v0.0.0/src/commands/new.ts)_
 
-## `sdu update [PATH_NAME]`
+## `sdu update [PATH_NAME]` *not implemented yet*
 
 update a slide
 
@@ -98,7 +97,7 @@ EXAMPLE
 
 _See code: [src/commands/update.ts](https://github.com/sugarshin/sdu/blob/v0.0.0/src/commands/update.ts)_
 
-## `sdu delete [PATH_NAME]`
+## `sdu delete [PATH_NAME]` *not implemented yet*
 
 delete a slide
 
@@ -116,6 +115,21 @@ EXAMPLE
 
 _See code: [src/commands/delete.ts](https://github.com/sugarshin/sdu/blob/v0.0.0/src/commands/delete.ts)_
 
+## `sdu conf [KEY] [VALUE]`
+
+manage configurations
+
+```
+USAGE
+  $ sdu conf username sugarshin
+
+ARGUMENTS
+  USERNAME  username
+  PASSWORD  password
+```
+
+_See code: [conf-cli](https://github.com/natzcam/conf-cli/blob/977b057b7ca33f0d31dcf9644ab4a9a5e87bd407/src/commands/conf.ts)_
+
 ## `sdu help [COMMAND]`
 
 display help for sdu
@@ -132,4 +146,3 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.0/src/commands/help.ts)_
-<!-- commandsstop -->
