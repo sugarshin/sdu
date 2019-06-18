@@ -9,6 +9,8 @@ import {BASE as BASE_URL} from '../constants/urls'
 import * as formatter from '../helpers/formatter'
 import {signin} from '../helpers/signin'
 
+const chromePaths = require('chrome-paths')
+
 export default class Ls extends Command {
   static description = 'list decks'
 
@@ -45,7 +47,7 @@ export default class Ls extends Command {
       this.error(new Error('`username` required. $ sdu ls <username> or before $ sdu conf username <username>'))
     }
 
-    const executablePath: string = conf.get('chromium') || '/Applications/Chromium.app/Contents/MacOS/Chromium'
+    const executablePath: string = conf.get('chromium') || chromePaths.chromium
     const browser = await puppeteer.launch({executablePath, headless: !process.env.DISABLED_HEADLESS})
     const page = await browser.newPage()
 
