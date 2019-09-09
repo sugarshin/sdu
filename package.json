@@ -24,7 +24,7 @@
     "@oclif/tslint": "3.1.1",
     "@types/chai": "4.2.1",
     "@types/mocha": "5.2.7",
-    "@types/node": "10.14.14",
+    "@types/node": "10.14.17",
     "@types/puppeteer-core": "1.9.0",
     "chai": "4.2.0",
     "globby": "8.0.2",
