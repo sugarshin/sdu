@@ -14,7 +14,7 @@
     "chrome-paths": "^1.0.1",
     "conf": "^4.1.0",
     "conf-cli": "^0.1.9",
-    "p-map": "^2.1.0",
+    "p-map": "^3.0.0",
     "puppeteer-core": "^1.17.0",
     "tslib": "^1.10.0"
   },
