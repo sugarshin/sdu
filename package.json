@@ -25,7 +25,7 @@
     "@types/chai": "4.2.11",
     "@types/mocha": "5.2.7",
     "@types/node": "10.17.27",
-    "@types/puppeteer-core": "1.9.0",
+    "@types/puppeteer-core": "2.0.0",
     "chai": "4.2.0",
     "globby": "8.0.2",
     "mocha": "5.2.0",
