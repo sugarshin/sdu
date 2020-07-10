@@ -10,7 +10,7 @@
   "dependencies": {
     "@oclif/command": "^1.5.14",
     "@oclif/config": "^1.13.0",
-    "@oclif/plugin-help": "^2.2.0",
+    "@oclif/plugin-help": "^3.0.0",
     "chrome-paths": "^1.0.1",
     "conf": "^4.1.0",
     "conf-cli": "^0.1.9",
