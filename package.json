@@ -23,7 +23,7 @@
     "@oclif/test": "1.2.6",
     "@oclif/tslint": "3.1.1",
     "@types/chai": "4.2.11",
-    "@types/mocha": "5.2.7",
+    "@types/mocha": "7.0.2",
     "@types/node": "10.17.27",
     "@types/puppeteer-core": "1.9.0",
     "chai": "4.2.0",
