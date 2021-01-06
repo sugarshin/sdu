@@ -27,7 +27,7 @@
     "@types/node": "10.17.27",
     "@types/puppeteer-core": "1.9.0",
     "chai": "4.2.0",
-    "globby": "8.0.2",
+    "globby": "11.0.2",
     "mocha": "5.2.0",
     "nyc": "13.3.0",
     "ts-node": "8.10.2",
